@@ -56,13 +56,12 @@ Publica mensagens do tipo `geometry_msgs/Twist` no tópico `/cmd_vel`, permitind
 - RViz2
 - TurtleBot3 packages
 
-Instalação dos pacotes necessários:
-```bash
+## Instalação dos pacotes necessários:
 sudo apt update
 sudo apt install ros-humble-turtlebot3* ros-humble-turtlebot3-simulations
 
 
-Compilação do Pacote
+## Compilação do Pacote
 
 Dentro do workspace ROS 2:
 
@@ -70,17 +69,17 @@ cd ~/ros2_ws
 colcon build
 source install/setup.bash
 
-Como Executar
+## Como Executar
 Executar o publisher simples
 ros2 run meu_primeiro_pacote primeiro_node
 
-Executar o subscriber
+## Executar o subscriber
 ros2 run meu_primeiro_pacote subscriber_node
 
-Executar o publicador de velocidade (/cmd_vel)
+## Executar o publicador de velocidade (/cmd_vel)
 ros2 run meu_primeiro_pacote cmd_vel_pub
 
-Simulação no Gazebo (TurtleBot3)
+## Simulação no Gazebo (TurtleBot3)
 
 Abrir o ambiente simulado:
 
@@ -88,11 +87,11 @@ export TURTLEBOT3_MODEL=burger
 ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
 
 
-Executar o nó de controle de movimento:
+## Executar o nó de controle de movimento:
 
 ros2 run meu_primeiro_pacote cmd_vel_pub
 
-Aplicações Futuras
+## Aplicações Futuras
 
 Este pacote pode ser estendido para:
 
